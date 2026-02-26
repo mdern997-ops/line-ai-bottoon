@@ -56,7 +56,7 @@ def reply_to_line(reply_token, text):
 def home():
     return "Bot is running!"
 
-@app.route("/webhook", methods=["POST"])
+@app.route("/callback", methods=["POST"])
 def webhook():
     data = request.get_json()
 
